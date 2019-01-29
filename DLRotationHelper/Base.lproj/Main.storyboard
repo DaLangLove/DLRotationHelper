@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KJT-8j-RbB"/>
+                        <viewControllerLayoutGuide type="bottom" id="THe-G2-0j0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gvI-f8-rFK">
+                                <rect key="frame" x="63" y="248.5" width="249" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0SY-pa-sBi">
+                                        <rect key="frame" x="30" y="0.0" width="189" height="30"/>
+                                        <state key="normal" title="UIDeviceOrientationPortrait"/>
+                                        <connections>
+                                            <action selector="portraitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M6z-qU-gyq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8K-ee-mpk">
+                                        <rect key="frame" x="4.5" y="70" width="240" height="30"/>
+                                        <state key="normal" title="UIDeviceOrientationLandscapeLeft"/>
+                                        <connections>
+                                            <action selector="landscapeLeftAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T3f-TE-Kpz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk4-gY-g0C">
+                                        <rect key="frame" x="0.0" y="140" width="249" height="30"/>
+                                        <state key="normal" title="UIDeviceOrientationLandscapeRight"/>
+                                        <connections>
+                                            <action selector="landscapeRightAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EIE-kO-YtG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gvI-f8-rFK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LdS-6h-qc1"/>
+                            <constraint firstItem="gvI-f8-rFK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T5g-in-2QY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
